@@ -1,2 +1,4 @@
 This is new feature which requires new file.
 sdfs
+
+This line ON NEW FEATURE
