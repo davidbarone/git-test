@@ -140,7 +140,7 @@ git log --oneline --graph --all --decorate -10
 # 6. Create new feature branch off main, and add file
 # ---------------------------------------------------------------
 
-check checkout main # make sure to branch off main
+git checkout main # make sure to branch off main
 git branch features/2
 git push -u origin features/2
 
