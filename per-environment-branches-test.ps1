@@ -58,7 +58,7 @@ git log --oneline --graph --all --decorate -10
 # ------------------------------------------------
 
 git checkout features/1dev
-'newfile' | Out-File -FilePath 1dev.txt
+'newfile' | Out-File -Encoding "UTF8" -FilePath 1dev.txt
 git status
 git add 1dev.txt
 git status
@@ -79,7 +79,7 @@ git log --oneline --graph --all --decorate -10
 # ------------------------------------------------
 
 git checkout features/1pfx
-'newfile' | Out-File -FilePath 1pfx.txt
+'newfile' | Out-File -Encoding "UTF8" -FilePath 1pfx.txt
 git status
 git add 1pfx.txt
 git status
@@ -100,7 +100,7 @@ git log --oneline --graph --all --decorate -10
 # ------------------------------------------------
 
 git checkout features/1main
-'newfile' | Out-File -FilePath 1main.txt
+'newfile' | Out-File -Encoding "UTF8" -FilePath 1main.txt
 git status
 git add 1main.txt
 git status
@@ -121,7 +121,7 @@ git log --oneline --graph --all --decorate -10
 # ---------------------------------------------------------------
 
 git checkout features/1dev
-'changed' | Out-File -FilePath 1dev.txt
+'changed' | Out-File -Encoding "UTF8" -FilePath 1dev.txt
 git status
 git add 1dev.txt
 git status
@@ -146,7 +146,7 @@ git branch features/2
 git push -u origin features/2
 
 git checkout features/2
-'newfile' | Out-File -FilePath 2.txt
+'newfile' | Out-File -Encoding "UTF8" -FilePath 2.txt
 git status
 git add 2.txt
 git status
@@ -160,7 +160,7 @@ git log --oneline --graph --all --decorate -10
 # ---------------------------------------------------------------
 
 git checkout features/1dev # make sure to branch off main
-'changed again' | Out-File -FilePath 2.txt
+'changed again' | Out-File -Encoding "UTF8" -FilePath 2.txt
 git status
 git add 2.txt
 git status
