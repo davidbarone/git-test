@@ -14,19 +14,19 @@ git push origin --delete Features/999999
 
 # Delete branches
 
-git branch -d dev
-git branch -d pfx
-git branch -d features/1dev
-git branch -d features/1pfx
-git branch -d features/1main
-git branch -d features/2
+git branch -D dev
+git branch -D pfx
+git branch -D features/1dev
+git branch -D features/1pfx
+git branch -D features/1main
+git branch -D features/2
 
 git push origin --delete dev
 git push origin --delete pfx
 git push origin --delete features/1dev
 git push origin --delete features/1pfx
 git push origin --delete features/1main
-git push origin --deletefeatures/2
+git push origin --delete features/2
 
 # --------------------------------------
 # 1. Create branches
