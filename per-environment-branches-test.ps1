@@ -155,6 +155,21 @@ git push origin
 
 git log --oneline --graph --all --decorate -10
 
+# ---------------------------------------------------------------
+# 7. Finally, add another change to dev branch to make it latest.
+# ---------------------------------------------------------------
+
+git checkout features/1dev # make sure to branch off main
+echo changed again > 2.txt
+git status
+git add 2.txt
+git status
+git commit -m "changed again 2.txt"
+git push origin
+
+git log --oneline --graph --all --decorate -10
+
+
 <#
 
 ... At this point, PRs will show following:
