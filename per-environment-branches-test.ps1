@@ -1,6 +1,6 @@
 # This file tests a per-environment scenario
 # Make sure all branches except main (local) + origin/main (remote) have been deleted
-
+# ALSO: Will need to delete all test files in main branch (Manually).
 <#
 To remove branches:
 -------------------
@@ -14,6 +14,7 @@ git push origin --delete Features/999999
 
 # Delete branches
 
+git checkout main
 git branch -D dev
 git branch -D pfx
 git branch -D features/1dev
