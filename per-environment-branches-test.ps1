@@ -167,8 +167,14 @@ git status
 git commit -m "changed again 2.txt"
 git push origin
 
-git log --oneline --graph --all --decorate -10
+# Merge
 
+git checkout dev
+git status
+git merge features/1dev
+git push origin dev
+
+git log --oneline --graph --all --decorate -10
 
 <#
 
