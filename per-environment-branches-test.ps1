@@ -58,7 +58,7 @@ git log --oneline --graph --all --decorate -10
 # ------------------------------------------------
 
 git checkout features/1dev
-echo newfile > 1dev.txt
+"newfile" >> 1dev.txt
 git status
 git add 1dev.txt
 git status
@@ -79,7 +79,7 @@ git log --oneline --graph --all --decorate -10
 # ------------------------------------------------
 
 git checkout features/1pfx
-echo newfile > 1pfx.txt
+"newfile" >> 1pfx.txt
 git status
 git add 1pfx.txt
 git status
@@ -100,7 +100,7 @@ git log --oneline --graph --all --decorate -10
 # ------------------------------------------------
 
 git checkout features/1main
-echo newfile > 1main.txt
+"newfile" >> 1main.txt
 git status
 git add 1main.txt
 git status
@@ -121,7 +121,7 @@ git log --oneline --graph --all --decorate -10
 # ---------------------------------------------------------------
 
 git checkout features/1dev
-echo changed > 1dev.txt
+"changed" >> 1dev.txt
 git status
 git add 1dev.txt
 git status
@@ -146,7 +146,7 @@ git branch features/2
 git push -u origin features/2
 
 git checkout features/2
-echo newfile > 2.txt
+"newfile" >> 2.txt
 git status
 git add 2.txt
 git status
@@ -160,7 +160,7 @@ git log --oneline --graph --all --decorate -10
 # ---------------------------------------------------------------
 
 git checkout features/1dev # make sure to branch off main
-echo changed again > 2.txt
+"changed again" >> 2.txt
 git status
 git add 2.txt
 git status
